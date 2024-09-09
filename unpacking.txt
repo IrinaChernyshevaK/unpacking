@@ -1,0 +1,16 @@
+def print_params(a = 1, b = 'строка', c = True):
+    print(a,b,c)
+
+print(print_params())
+print(print_params(b = 25))
+print(print_params(c = [1,2,3]))
+print(print_params('f',0))
+print(print_params(False,4,'jhg'))
+
+values_list=[9, 'dog', False]
+print(print_params(*values_list))
+values_dict={'a':'cat', 'b':8, 'c':True}
+print(print_params(**values_dict))
+
+values_list_2 = [64.32, 'dfdg' ]
+print_params(*values_list_2, 42)
